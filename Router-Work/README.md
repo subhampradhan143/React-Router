@@ -1,16 +1,48 @@
-# React + Vite
+﻿# Router-Work
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React router demo built with Vite.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project includes:
 
-## React Compiler
+- `App.jsx` with a `BrowserRouter` wrapper
+- `Navbar.jsx` using React Router `Link` components
+- `MainRoute.jsx` with `Routes`, `Route`, and a redirect from `/` to `/home`
+- Page components in `src/Component/Pages`:
+  - `Home.jsx`
+  - `About.jsx`
+  - `Project.jsx`
+  - `Contact.jsx`
+  - `Services.jsx`
+- Custom styling in `src/index.css`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Available Scripts
 
-## Expanding the ESLint configuration
+In the project directory, you can run:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### `npm install`
+
+Install project dependencies.
+
+### `npm run dev`
+
+Start the Vite development server and open the app in your browser.
+
+### `npm run build`
+
+Build the app for production into the `dist` folder.
+
+### `npm run preview`
+
+Preview the production build locally.
+
+## Notes
+
+- The app is designed to use React Router for client-side navigation.
+- The navbar is implemented using `Link` components rather than anchor tags.
+- Styles are managed with a single global CSS file for a clean, modern layout.
+
+## License
+
+This project is provided for learning and experimentation.
