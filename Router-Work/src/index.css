@@ -1,0 +1,143 @@
+/* Global app styling */
+:root {
+  color-scheme: dark light;
+  color: #1b1d25;
+  background: radial-gradient(circle at top left, #7c5cff 20%, #4b6af6 55%, #1b1d25 100%);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: transparent;
+  color: #f5f7ff;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+body > div {
+  min-height: 100vh;
+}
+
+body, button, input, textarea {
+  font: inherit;
+}
+
+header,
+nav,
+main,
+footer {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+header {
+  padding: 3rem 0 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  text-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+header p {
+  margin: 1rem auto 0;
+  max-width: 42rem;
+  color: #d4dcff;
+  font-size: 1.05rem;
+}
+
+nav {
+  background: rgba(10, 15, 55, 0.78);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem auto;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #e8ebff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
+  color: #ffffff;
+}
+
+main {
+  padding-bottom: 2.5rem;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 1.75rem 1.75rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  margin: 0 0 0.75rem;
+  color: #fbfdff;
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+}
+
+section p {
+  margin: 0;
+  color: #d7dbff;
+  max-width: 42rem;
+}
+
+footer {
+  padding: 1.75rem 0 2.5rem;
+  color: #b6bdd8;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  nav ul {
+    gap: 0.75rem;
+  }
+
+  section {
+    padding: 1.5rem 1.25rem;
+  }
+}
